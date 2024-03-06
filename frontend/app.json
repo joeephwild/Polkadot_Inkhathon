@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "userInterfaceStyle": "automatic",
+    "orientation": "default",
+    "web": {
+      "output": "static",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://n"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $APPVERSE to access your camera."
+        }
+      ]
+    ],
+    "name": "frontend",
+    "slug": "frontend"
+  }
+}
