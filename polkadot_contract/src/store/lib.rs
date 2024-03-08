@@ -22,7 +22,7 @@ mod store_contract {
         address_app_count: Mapping<AccountId, u64>,
         id_to_app: BTreeMap<u64, App>,
         app_count: u128,
-        address_to_app: BTreeMap<AccountId, Vec<App>>,
+        address_to_app: Mapping<AccountId, Vec<App>>,
     }
 
     #[ink(event)]
@@ -46,12 +46,12 @@ mod store_contract {
     impl StoreContract {
         #[ink(constructor)]
         pub fn new() -> Self {
-            Self {
+           Self {
                 all_app: Vec::new(),
                 address_app_count: Mapping::new(),
                 id_to_app: BTreeMap::new(),
                 app_count: 0,
-                address_to_app: BTreeMap::new()
+                address_to_app: Mapping::new()
             }
         }
 
@@ -123,6 +123,5 @@ mod store_contract {
             None
         }
     }
-
   
 }
