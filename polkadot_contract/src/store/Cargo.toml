@@ -5,6 +5,7 @@ authors = ["[Joseph] <[josephomotade0@gmail.com]>"]
 edition = "2021"
 
 [dependencies]
+cargo-contract = "3.2.0"
 ink = { version = "4.0.0-beta", default-features = false }
 
 scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
@@ -20,11 +21,7 @@ crate-type = [
 
 [features]
 default = ["std"]
-std = [
-    "ink/std",
-    "scale/std",
-    "scale-info/std",
-]
+std = ["ink/std", "scale/std", "scale-info/std"]
 
 
 

@@ -111,7 +111,7 @@ mod store_contract {
 
         #[ink(message)]
         pub fn get_user_app_uri(&self, user: AccountId, index: u64) -> Option<String> {
-            let mut count = 0;
+            let mut count: u64 = 0;
             for app in &self.all_app {
                 if app.owner == user {
                     if count == index {

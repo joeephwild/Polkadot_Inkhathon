@@ -1,4 +1,4 @@
 [workspace]
 
 resolver = "1"
-members = [ "src/erc721","src/pack", "src/store"]
+members = ["src/pack", "src/store"]
