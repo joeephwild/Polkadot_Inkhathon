@@ -29,6 +29,7 @@ mod pack_contract {
     fn mint(&mut self, id: Id) -> Result<()>;
    }
 
+
     #[derive(Debug, Clone, scale::Encode, scale::Decode)]
     #[cfg_attr(feature = "std", derive(scale_info::TypeInfo))]
     pub struct PackContract {
@@ -71,37 +72,35 @@ mod pack_contract {
         #[ink(message)]
         pub fn create_pack(&mut self, _pack_address: AccountId, desc: String, _name: String, amount: u128, _quanity: u128, _receiver: AccountId)  {
             let _caller: AccountId = self.env().caller();
-            let pack: Option<PackContract> = self.address_to_pack.insert(_caller, PackContract{
+            let pack = PackContract {
                 game_address: _pack_address,
                 pack_desc: desc,
                 pack_namme: _name,
                 price: amount,
                 quanity: _quanity,
                 owner: _receiver
-            });
-            if let Some(pack_to_push) = pack {
-                self.all_pack.push(pack_to_push);
-            }
+            };
+            self.address_to_pack.insert(_caller, pack.clone());
+            self.all_pack.push(pack.clone());
+            self.id_to_pack.insert(self.all_pack.len() as u128, pack.clone());
+
         }
 
         #[ink(message, payable)]
         pub fn buy_pack(&self, _quantity: u128, _id: u128) -> u128 {
-            let _caller: AccountId = self.env().caller();
             let money_sent: u128 = self.env().transferred_value();
-            let pack: &PackContract = self.id_to_pack.get(&_id).expect("App does not exist");
-            assert!(money_sent >= pack.price, "InsufficientFunds");
+            let pack: PackContract = match self.id_to_pack.get(&_id) {
+                Some(pack) => pack.clone(),
+                None => panic!("Pack does not exist"),
+            };
+            assert!(money_sent >= pack.price, "Insufficient Funds");
 
-            let mut game_pack: contract_ref!(PSP34Mintable) = pack.game_address.into();
-
-            // send require money to the address
+            // send required money to the pack owner
             if self.env().transfer(pack.owner, money_sent).is_err() {
-                panic!("error transferring")
+                panic!("Error transferring");
             }
 
-            // game_pack.mint(_id);
-
-           let remianing_quantity: u128 = pack.quanity - _quantity;
-           remianing_quantity
+            pack.quanity -_quantity
         }
 
         #[ink(message)]
