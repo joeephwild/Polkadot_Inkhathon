@@ -10,6 +10,8 @@ ink = { version = "4.0.0-beta", default-features = false }
 scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
 scale-info = { version = "2.3", default-features = false, features = ["derive"], optional = true }
 
+psp34 = { git = "https://github.com/Cardinal-Cryptography/PSP34.git", default-features = false }
+
 [lib]
 name = "pack"
 path = "lib.rs"
