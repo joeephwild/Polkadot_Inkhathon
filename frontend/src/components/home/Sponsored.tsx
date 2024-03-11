@@ -27,7 +27,7 @@ const Sponsored = () => {
         <Text className="text-lg font-bold text-[#fff]">Sponsored</Text>
       </View>
 
-      <View className="flex-row flex-wrap w-[100%]">
+      <View className="flex w-[100%]">
         <FlatList
           data={apps}
           renderItem={renderItem}

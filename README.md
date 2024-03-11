@@ -1,4 +1,4 @@
-# Decentralized Web3 AppStore
+# Nifty Gateway
 
 ## Table of Contents
 
@@ -8,7 +8,9 @@
 4. [Features](#features)
 5. [Installation](#installation)
 6. [Usage](#usage)
-7. [License](#license)
+7. [Challenges](#Challenges)
+
+![youtube](https://youtu.be/D4ssBI3WgAo?si=vNZwGxszYrzqdAbA)
 
 ## 1. Introduction
 
@@ -46,14 +48,14 @@ To install the Decentralized Web3 AppStore, follow these steps:
 
 ## 6. Usage
 
-Once installed, users can access the Decentralized Web3 AppStore through their mobile devices. They can explore featured dApps and content, search for specific applications, and interact with the community through reviews and ratings.
+Once installed, users can access the Nifty Gateway through their mobile devices. They can explore featured dApps and content, search for specific applications, and interact with the community through reviews and ratings.
 
 Developers can publish their dApps by following the provided guidelines and utilizing the developer tools available within the platform. Content creators can similarly share their creations and engage with the user community.
 
-## 8. License
+## Challenges
 
-The Decentralized Web3 AppStore is licensed under the [License Name]. See the [LICENSE](LICENSE) file for more details.
+This was my first time on the polkadot chain but thanks to the workshop i was able to write my first smart contract 
 
 ---
 
-Thank you for choosing the Decentralized Web3 AppStore. We believe in the power of decentralization to transform the future of application distribution in the blockchain and cryptocurrency ecosystem. Join us on this journey towards a more open, transparent, and inclusive digital economy.
+Thank you for choosing the Nifty Gateway. We believe in the power of decentralization to transform the future of application distribution in the blockchain and cryptocurrency ecosystem. Join us on this journey towards a more open, transparent, and inclusive digital economy.

@@ -15,25 +15,29 @@ import { useWeb3Modal } from "@web3modal/wagmi-react-native";
 const onBoradingSteps = [
   {
     title: "Welcome to the Dean of Decntralized Applications!",
-    image: require("../assets/images/onboard1.png"),
+    image:
+      "https://images.pexels.com/photos/6498301/pexels-photo-6498301.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
       "Dive into a world of innovative and engaging blockchain-based games. Own your assets, experience true ownership, and connect with a passionate community.",
   },
   {
     title: "Explore the possibilities!",
-    image: require("../assets/images/onboard2.png"),
+    image:
+      "https://images.pexels.com/photos/4144458/pexels-photo-4144458.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
       "Browse our diverse collection of dApps based on Usability, popularity, and blockchain technology. Find your next adventure!",
   },
   {
     title: "Secure your adventure!",
-    image: require("../assets/images/onboard3.png"),
+    image:
+      "https://images.pexels.com/photos/3943740/pexels-photo-3943740.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
       "Choose your preferred crypto wallet or connect an existing one. Your wallet is your key to downloading, playing, and trading games on our platform.",
   },
   {
     title: "Join the fun!",
-    image: require("../assets/images/onboard4.png"),
+    image:
+      "https://images.pexels.com/photos/2552127/pexels-photo-2552127.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
       "Connect with other players, discuss games, share strategies, and participate in exciting live events (Community events, feature announcements and dApp review session.",
   },
@@ -82,11 +86,13 @@ const index = () => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <GestureDetector gesture={swipes}>
-        <View className="items-center  justify-center flex-1">
+        <View className="items-center justify-center flex-1">
           <StatusBar style="auto" />
           <ImageBackground
-            source={data.image}
-            className="min-h-[600px] w-full items-end relative"
+            source={{
+              uri: data?.image,
+            }}
+            className="min-h-[60%] w-full items-end relative"
           >
             <TouchableOpacity
               onPress={handleSkip}
@@ -109,7 +115,7 @@ const index = () => {
               ))}
             </View>
           </ImageBackground>
-          <View className="bg-whit items-center w-full py-[16px] h-[300px]">
+          <View className="bg-whit items-center w-full py-[16px] h-[40%]">
             <Text className="text-[24px] font-opensans-bold px-[20px] text-[#fff] text-center font-bold">
               {data.title}
             </Text>
