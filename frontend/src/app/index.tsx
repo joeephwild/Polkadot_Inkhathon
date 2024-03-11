@@ -92,7 +92,7 @@ const index = () => {
             source={{
               uri: data?.image,
             }}
-            className="min-h-[60%] w-full items-end relative"
+            className="min-h-[70%] w-full items-end relative"
           >
             <TouchableOpacity
               onPress={handleSkip}
@@ -115,7 +115,7 @@ const index = () => {
               ))}
             </View>
           </ImageBackground>
-          <View className="bg-whit items-center w-full py-[16px] h-[40%]">
+          <View className="bg-whit items-center w-full py-[16px] h-[30%]">
             <Text className="text-[24px] font-opensans-bold px-[20px] text-[#fff] text-center font-bold">
               {data.title}
             </Text>

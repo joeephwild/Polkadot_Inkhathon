@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Recent from "@/components/home/Recent";
 import Sponsored from "@/components/home/Sponsored";
 import Banner from "@/components/Banner";
+import Range from "@/components/range";
 
 const apps = () => {
   return (
@@ -16,6 +17,7 @@ const apps = () => {
           minHeight: "100%",
         }}
       >
+        <Range />
         <Banner />
         <Sponsored />
         <Banner />

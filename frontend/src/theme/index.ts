@@ -1,4 +1,4 @@
 export const storeColors = {
-    text: '#0D163A',
+    text: '#fff',
     redHeart: '#F73434'
 }   

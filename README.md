@@ -10,11 +10,11 @@
 6. [Usage](#usage)
 7. [Challenges](#Challenges)
 
-![youtube](https://youtu.be/D4ssBI3WgAo?si=vNZwGxszYrzqdAbA)
+![youtube](https://youtu.be/HeZTNaNHKY8)
 
 ## 1. Introduction
 
-Welcome to the Decentralized Web3 AppStore! This project aims to revolutionize the way developers, and App users interact within the blockchain and cryptocurrency ecosystem. By leveraging the power of decentralization, we provide a robust platform where participants can showcase, discover, and utilize applications securely and transparently.
+Welcome to the Nifty Gatway Web3 AppStore! This project aims to revolutionize the way developers, and App users interact within the blockchain and cryptocurrency ecosystem. By leveraging the power of decentralization, we provide a robust platform where participants can showcase, discover, and utilize applications securely and transparently.
 
 ## 2. Vision
 The vision of the project is to create a vibrant and inclusive ecosystem for web3 applications, games, and game packs. It aims to empower developers by providing them with a decentralized platform where they can showcase their work, engage with a supportive community, and monetize their creations through the sale and distribution of apps, games, and packs. The project seeks to leverage the principles of decentralization, transparency, and community governance through the integration of DAO (Decentralized Autonomous Organization) features. This allows stakeholders to have a say in the platform's development, decision-making processes, and resource allocation, fostering a truly democratic and participatory environment. Furthermore, by incorporating live-streaming capabilities, the platform encourages real-time interaction and collaboration among users, fostering a dynamic and engaging experience for both developers and consumers. Overall, the vision is to establish a forward-thinking, user-centric, and sustainable ecosystem that empowers individuals to explore, create, and thrive in the emerging landscape of web3 technology.
@@ -54,7 +54,11 @@ Developers can publish their dApps by following the provided guidelines and util
 
 ## Challenges
 
-This was my first time on the polkadot chain but thanks to the workshop i was able to write my first smart contract 
+This was my first time on the polkadot chain but thanks to the workshop i was able to write my first smart contract, 
+
+resouces i used
+[Encode ink smart contract workshop](https://www.youtube.com/watch?v=Ccbzavn98dw)
+[Encode ink smart contract playlist](https://www.youtube.com/watch?v=JPW1JLqKNzY&list=PLfEHHr3qexv_60ljyklbYFuG6XJ4kJWQZ)
 
 ---
 
